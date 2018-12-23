@@ -35,7 +35,7 @@ var isHappy = function (n) {
     if (sumSqure === 1) {
       return true;
     }
-    if (records[sumSqure] === true) {
+    if (records[sumSqure]) {
       return false;
     }
     records[sumSqure] = true;
