@@ -39,7 +39,7 @@ var removeDuplicates = function (nums) {
   if (nums.length < 2) {
     return nums.length;
   }
-  let res = 1;//nums[0...res)中的元素更不相同
+  let res = 1;//nums[0...res)中的元素各不相同
   for (let i = 1; i < nums.length; ++i) {
     if (nums[i] !== nums[res - 1]) {
       nums[res++] = nums[i];
